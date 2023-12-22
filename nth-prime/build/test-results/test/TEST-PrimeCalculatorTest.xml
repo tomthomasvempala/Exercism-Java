@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PrimeCalculatorTest" tests="5" skipped="4" failures="0" errors="0" timestamp="2023-12-21T18:39:42" hostname="THOMMU" time="0.127">
+<testsuite name="PrimeCalculatorTest" tests="5" skipped="1" failures="0" errors="0" timestamp="2023-12-22T05:14:32" hostname="THOMMU" time="0.062">
   <properties/>
-  <testcase name="testUndefinedPrime" classname="PrimeCalculatorTest" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase name="testSixthPrime" classname="PrimeCalculatorTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="testFirstPrime" classname="PrimeCalculatorTest" time="0.122"/>
-  <testcase name="testSecondPrime" classname="PrimeCalculatorTest" time="0.0">
-    <skipped/>
-  </testcase>
+  <testcase name="testUndefinedPrime" classname="PrimeCalculatorTest" time="0.057"/>
+  <testcase name="testSixthPrime" classname="PrimeCalculatorTest" time="0.003"/>
+  <testcase name="testFirstPrime" classname="PrimeCalculatorTest" time="0.0"/>
+  <testcase name="testSecondPrime" classname="PrimeCalculatorTest" time="0.001"/>
   <testcase name="testBigPrime" classname="PrimeCalculatorTest" time="0.0">
     <skipped/>
   </testcase>
