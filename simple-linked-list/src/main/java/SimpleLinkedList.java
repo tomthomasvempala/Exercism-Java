@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException;
+
 class SimpleLinkedList<T> {
     Node<T> head;
     Node<T> end;
@@ -27,7 +29,7 @@ class SimpleLinkedList<T> {
         size++;
     }
 
-    T pop() {
+    T pop() throws NoSuchElementException {
         if(end!=null){
             Node<T> popped = end;
             end = end.prev;
@@ -37,7 +39,7 @@ class SimpleLinkedList<T> {
             size--;
             return popped.value;
         }
-        return null;
+        throw new NoSuchElementException();
     }
 
     void reverse() {
@@ -54,11 +56,15 @@ class SimpleLinkedList<T> {
                 break;
             }
         }
+        pointer = head;
+        head=end;
+        end=pointer;
     }
 
     T[] asArray(Class<T> clazz) {
+        this.reverse();
         Node<T> pointer = head;
-        T[] array = (T[]) new Object[this.size];
+        T[] array = (T[]) java.lang.reflect.Array.newInstance(clazz, size);
         int index = 0;
         while(true){
             if(pointer==null){
